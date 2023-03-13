@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  background-image: url(../background.jpg);
+  filter: contrast(150%);
+  filter: grayscale(25%);
+  background-size: cover;
+  background-position: center;
+
+}
+#content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+#content > p{
+  width: 50%;
+  font-weight: bold;
+  font-size: 20px;
+  color: #1a1c3e;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid wh;
+  padding: 50px 70px;
+  text-align: start;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #1a1c3e;
+}
+form label, form > p{
+  font-size: 17px;
+  font-weight: 500;
+}
+form input{
+  height: 37px;
+  border-radius: 8px;
+  margin: 5px 0px 20px 0px;
+  text-align: center;
+  font-weight: bold;
+  border: 3px groove white;
+  outline: none;
+}
+form button{
+  color: white;
+  width: 40%;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+#nameAndSurname{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+#nameAndSurname div{
+  display: grid;
+  grid-template-rows: auto auto;
+}
+#gender{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#gender label{
+  margin-right: 35px;
+}
+#gender input{
+  margin: 0px 2px 0px 35px;
+}
+button {
+  border-radius: 20px;
+  border: 1px solid transparent;
+  padding: 12px 0px;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #1a1c3e;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  transition: 0.12s;
+}
+button:hover{
+  transition: 0.12s;
+  background-color: white;
+  color: #1a1c3e;
+  border-color: #1a1c3e;
+}
